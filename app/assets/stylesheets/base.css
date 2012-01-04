@@ -1,0 +1,1084 @@
+/* 一括で全ての要素の余白をゼロに指定 */
+body {
+	font-family: "ＭＳ Ｐゴシック", Arial, sans-serif;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+p.text_word_s{
+	font-size:11px;
+	color:#666;
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+}
+.align_left{
+	text-align:left;
+	width:900px;
+	margin:0 auto;
+}
+img {
+	border: none;
+}
+a:link {
+	color: #0000ff;
+	text-decoration: underline;
+}
+a:visited {
+	color: #990099;
+	text-decoration: underline;
+}
+a:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+/* ---------------------------------------- フォントスタイル フォントサイズ */
+body {
+	font-size: 0.85em;
+	text-align: center;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#top_line {
+	width: 100%;
+	color: #444;
+	background-color: #efefef;
+	font-size: 12px;
+}
+#top_line_contents {
+	width: 900px;
+	margin: 0 auto;
+}
+#wrapper {
+	text-align: left;
+	margin: 0 auto 0;
+	width: 900px;
+}
+#header {
+	/*padding: 20px 20px 10px;*/
+	margin: 0px auto 0;
+	height: 73px;
+	background: url("http://cosplay-fuzoku.net/img/header_back.gif");
+}
+#header_contents {
+	width: 900px;
+	margin: 0 auto;
+	text-align: left;
+}
+#container {
+	float: left;
+	width: 900px;
+	margin-right: -200px;
+	margin-top: 2px;
+}
+#contents {
+	margin-right: 200px;
+	width: 700px;
+}
+#sidebar {
+	float: right;
+	width: 190px;
+	margin: 24px 0 0 10px;
+}
+#footer {
+	clear: both;
+}
+/* ---------------------------------------- #header内の指定 */
+
+/* -- 見出しレベル1 -- */
+h1 {
+	text-align: left;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666;
+}
+/* -- 企業名 ショップ名 サイト名 -- */
+.logo {
+	margin: 18px 0 10px 0;
+	float: left;
+}
+.logo a {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #0099ff;
+}
+.logo a:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #ff0000;
+}
+/* -- 概要 -- */
+.description {
+	float: left;
+	margin: 28px 0 0 5px;
+	vertical-align: middle;
+	font-size: 10px;
+	color: #444;
+}
+.header_banner {
+	float: right;
+	margin: 6px 0 0 0;
+	vertical-align: middle;
+}
+.main_title {
+	width: 698px;
+	height: 42px;
+	background: url("http://cosplay-fuzoku.net/img/main_title.gif");
+}
+.main_title .text {
+	width: 668px;
+	height: 42px;
+	margin: 0px auto;
+	color: #444;
+	font-size: 16px;
+	padding: 10px 0 0 0;
+}
+.main_search_box {
+	width: 698px;
+	height: 77px;
+	background: url("http://cosplay-fuzoku.net/img/main_search_box.gif");
+	margin: 10px 0 0 0;
+}
+.main_search_box .icon_layer {
+	clear: both;
+	margin: 10px auto;
+	padding: 16px 0 0;
+	width: 640px;
+}
+.main_search_box .icon_layer .icon {
+	width: 180px;
+	height: 30px;
+	float: left;
+}
+.main_search_box .input_layer {
+	clear: both;
+	margin: 0px auto;
+	padding: 0px 0 0;
+	width: 640px;
+}
+.main_search_box .input_layer .input {
+	width: 180px;
+	float: left;
+	margin-top: -5px;
+}
+.main_search_box .input_layer .input_f {
+	width: 160px;
+	float: left;
+	margin-top: -5px;
+}
+.main_search_box .input_layer .submit {
+	float: left;
+	margin-top: -15px;
+	width: 118px;
+}
+.main_search_box .input_layer .main_search_box_submit {
+	width: 118px;
+	height: 31px;
+	background: url("http://cosplay-fuzoku.net/img/search_btn.gif");
+	display: block;
+	border: none;
+	cursor: pointer;
+}
+.osusume_title {
+	width: 698px;
+	height: 46px;
+	background: url("http://cosplay-fuzoku.net/img/osusume_title.gif");
+	margin: 10px 0 0 0;
+}
+.osusume_title .text {
+	width: 608px;
+	height: 42px;
+	margin: 0px auto;
+	color: #444;
+	font-size: 16px;
+	padding: 12px 0 0 0;
+}
+.base_title {
+	width: 698px;
+	height: 46px;
+	background: url("http://cosplay-fuzoku.net/img/base_title.gif");
+	margin: 10px 0 0 0;
+}
+.base_title .text {
+	width: 660px;
+	height: 42px;
+	margin: 0px auto;
+	color: #444;
+	font-size: 16px;
+	padding: 0.9em 0 0 0;
+}
+.base_title .text .sub {
+	font-size: 14px;
+	color: #e4007f;
+	padding: 0 0 0 10px;
+	font-weight: 200;
+}
+.osusume_contents {
+	width: 696px;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	float: left;
+}
+.osusume_contents .shop_layer {
+	width: 648px;
+	margin: 10px auto 0;
+}
+.osusume_contents .shop_layer .shop_l {
+	width: 312px;
+	float: left;
+	margin-bottom: 10px;
+}
+.osusume_contents .shop_layer .shop_r {
+	width: 312px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.osusume_contents .shop_layer .title {
+	width: 312px;
+	height: 34px;
+	background: url("http://cosplay-fuzoku.net/img/osusume_shop_title.gif");
+	margin-bottom: 5px;
+}
+.osusume_contents .shop_layer .title .text {
+	width: 272px;
+	margin: 10px auto;
+	color: white;
+	font-size: 14px;
+}
+.osusume_contents .shop_layer .title .text a {
+	color: white;
+	text-decoration: none;
+}
+.osusume_contents .shop_layer .title .text a:hover {
+	color: white;
+	text-decoration: underline;
+}
+.osusume_contents .shop_layer .title .text a:visited {
+	color: white;
+}
+.osusume_contents .shop_layer .picture {
+	width: 174px;
+	height: 120px;
+	float: left;
+}
+.osusume_contents .shop_layer .text {
+	width: 135px;
+	float: right;
+	font-size: 12px;
+	color: #444;
+}
+.pickup_title {
+	width: 698px;
+	height: 43px;
+	float: left;
+	background: url("http://cosplay-fuzoku.net/img/pick_up_title.gif");
+	margin: 10px 0 0 0;
+}
+.pickup_title .text {
+	width: 608px;
+	height: 43px;
+	margin: 0px auto;
+	color: #444;
+	font-size: 16px;
+	padding: 9px 0 0 0;
+}
+.pickup_contents {
+	width: 696px;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	float: left;
+}
+.pickup_contents .layer {
+	width: 648px;
+	margin: 10px auto 0;
+}
+.pickup_contents .layer .box {
+	width: 145px;
+	border: solid 1px #e0e0e0;
+	margin: 0 20px 15px 0;
+	float: left;
+}
+.pickup_contents .layer .box_f {
+	width: 145px;
+	border: solid 1px #e0e0e0;
+	margin: 0 0px 15px 0;
+	float: left;
+}
+.pickup_contents .layer .picture {
+	width: 123px;
+	margin: 5px auto;
+}
+.pickup_contents .layer .title {
+	width: 123px;
+	margin: 5px auto;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+.pickup_contents .layer .area {
+	width: 123px;
+	margin: 5px auto;
+	text-align: center;
+	font-size: 12px;
+	color: #f31691;
+	font-weight: 600;
+}
+.tab_frame_t {
+	width: 698px;
+	height: 9px;
+	margin: 0px;
+	padding: 0px;
+	background: url("http://cosplay-fuzoku.net/img/tab_frame_t.gif");
+	float: left;
+}
+.tab_frame_m {
+	width: 698px;
+	padding: 0 0 10px 0;
+	background: url("http://cosplay-fuzoku.net/img/tab_frame_m.gif");
+	float: left;
+}
+.tab_frame_b {
+	width: 698px;
+	height: 8px;
+	margin: 0px;
+	padding: 0px;
+	background: url("http://cosplay-fuzoku.net/img/tab_frame_b.gif");
+	float: left;
+}
+.shop_search_list_def {
+	width: 648px;
+	margin: 0px auto 0px 22px;
+	float: left;
+}
+.shop_search_list_def .layer {
+	width: 628px;
+	margin: 5px auto 10px;
+}
+.shop_search_list_def .title {
+	font-size: 16px;
+	margin: 0 0 5px 0;
+}
+.shop_search_list_def .shop_info {
+	margin: 0px 0px 5px auto;
+	color: #444;
+	font-size: 12px;
+}
+.shop_search_list {
+	width: 648px;
+	margin: 10px auto 10px 22px;
+	background-color: #ffecf7;
+	border: solid 1px #ffc6e6;
+	float: left;
+}
+.shop_search_list .layer {
+	width: 628px;
+	margin: 5px auto;
+}
+.shop_search_list .layer .picture {
+	width: 94px;
+	/*float:left;*/
+	float: left;
+}
+.shop_search_list .layer .text {
+	width: 380px;
+	margin: 0 0 0 6px;
+	font-size: 14px;
+	color: #444;
+	float: left;
+	line-height: 1.2em;
+}
+.shop_search_list .title {
+	font-size: 16px;
+	margin: 0 0 5px 0;
+}
+.shop_search_list .text_area {
+	width: 628px;
+	margin: 10px auto;
+	/*float:left;*/
+}
+.shop_search_list .good_icon {
+	/*yuryouten_icon*/
+	width: 121px;
+	height: 39px;
+	margin: -20px 10px auto auto;
+}
+.shop_search_list .shop_info {
+	width: 121px;
+	margin: 5px 10px auto auto;
+	color: #444;
+	font-size: 13px;
+}
+.inner_play_frame_t {
+	width: 381px;
+	height: 4px;
+	background: url("http://cosplay-fuzoku.net/img/inner_play_frame_t.gif");
+	float: left;
+	margin: 5px 0 0 6px;
+}
+.inner_play_frame_m {
+	width: 381px;
+	background: url("http://cosplay-fuzoku.net/img/inner_play_frame_m.gif");
+	float: left;
+	margin: 0 0 0 6px;
+}
+.inner_play_frame_m .desc {
+	width: 350px;
+	padding: 2px 0 2px 0px;
+	margin: 0 auto;
+	line-height: 1.2em;
+	font-size: 12px;
+	color: #e4007f;
+}
+.inner_play_frame_b {
+	width: 381px;
+	height: 3px;
+	background: url("http://cosplay-fuzoku.net/img/inner_play_frame_b.gif");
+	float: left;
+	margin: 0 0 8px 6px;
+}
+.search_cond_title {
+	width: 698px;
+	height: 41px;
+	float: left;
+	background: url("http://cosplay-fuzoku.net/img/search_cond_title.gif");
+	margin: 10px 0 0 0;
+}
+.search_cond_title .text {
+	width: 600px;
+	height: 41px;
+	margin: 0px auto;
+	color: white;
+	font-size: 16px;
+	padding: 11px 0 0 0;
+}
+.search_cond_frame_m {
+	width: 698px;
+	background: url("http://cosplay-fuzoku.net/img/search_cond_frame_m.gif");
+	float: left;
+}
+.search_cond_frame_b {
+	width: 698px;
+	height: 8px;
+	background: url("http://cosplay-fuzoku.net/img/search_cond_frame_b.gif");
+	float: left;
+}
+.search_cond_frame_m .text {
+	border-bottom: 2px solid #ff58b5;
+	margin: 5px auto 0;
+}
+.search_cond_frame_m .text p {
+	font-size: 12px;
+	color: #444;
+	padding: 0 0 0 15px;
+}
+#contents .search_cond_frame_m .search_layer {
+	border-bottom: 2px solid #ff58b5;
+}
+#contents .search_cond_frame_m .fin {
+	border: none;
+}
+#contents .search_cond_frame_m .search_layer dl.left_area {
+	float: left;
+	width: 123px;
+	background-color: #ffecf7;
+	margin: 0 0 0 7px;
+}
+#contents .search_cond_frame_m .search_layer dt {
+	float: left;
+	margin: 8px 0 0 8px;
+	font-size: 12px
+}
+#contents .search_cond_frame_m .search_layer dd.right_area {
+	float: left;
+	width: 560px;
+	margin: -20px 0 10px 130px;
+}
+#contents .search_cond_frame_m .search_layer dd.right_area li {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	padding-top: 1px;
+	font-size: 12px;
+}
+#tab_area {
+	width: 696px;
+	float: left;
+	clear: both;
+	margin: 10px 0 0 2px;
+	padding: 0px;
+	height: 27px;
+}
+#tab_area a {
+	outline: none;
+}
+#tab_area li {
+	float: left;
+	list-style: none;
+	margin: 0 4px 0 0;
+	padding: 0px;
+}
+#tab_area li.pat2 {
+	float: left;
+	list-style: none;
+	margin: 0 4px 0 0;
+	padding: 0px;
+}
+#tab_area li.fin {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0px;
+}
+/* -- 文字 -- */
+#contents p {
+	line-height: 1.6em;
+	margin-bottom: 0.5em;
+}
+/* -- パン屑リスト -- */
+#contents .topic-path {
+	margin: 0 0 3px 5px;
+	font-size: 12px;
+	color: #666;
+}
+/* -- 以下 リスト関係 -- */
+#contents dl {
+	margin: 0 0 0 5px;
+	float: left;
+	width: 132px;
+	line-height: 1.2em;
+}
+#contents dt {
+	font-weight: bold;
+	float: left;
+	font-size: 11px;
+}
+#contents dd {
+	font-size: 11px;
+	float: left;
+}
+#contents ol {
+	list-style: none;
+}
+#contents li {
+	list-style: none;
+}
+#contents ul {
+	list-style: none;
+}
+#contents ul.link_list a {
+	background-image: url("http://cosplay-fuzoku.net/img/arrow_icon.gif");
+	background-position: 3px 6px;
+	background-repeat: no-repeat;
+	display: block;
+	line-height: 1.4;
+	padding: 2px 5px 1px 10px;
+	white-space: nowrap;
+}
+/* ---------------------------------------- #sidebar内の指定 */
+
+/* -- カテゴリタイトル -- */
+.sidetitle {
+	background: url("http://cosplay-fuzoku.net/img/right_navi_title.gif");
+	width: 191px;
+	height: 32px;
+}
+.sidetitle .text {
+	width: 170px;
+	margin: 0 auto;
+	padding: 8px 0;
+	font-size: 12px;
+	font-weight: 600;
+	color: #444;
+}
+#sidebar .text_box {
+	width: 189px;
+	border-left: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	border-right: 1px solid #dadada;
+	margin: 0px 0px 10px 0;
+	padding: 0px
+}
+#sidebar .text_box .line {
+	width: 189px;
+	background-color: #efefef;
+	padding: 0px 0px 0px 0px;
+	border-top: 1px solid white;
+}
+#sidebar .text_box .yellow_line {
+	width: 189px;
+	background-color: #FFFBBB;
+	padding: 0px 0px 0px 0px;
+	border-top: 1px solid white;
+}
+#sidebar .text_box .yellow_line .text {
+	width: 170px;
+	margin: 0px auto;
+	padding: 2px 0;
+	font-size: 12px;
+	color: #444;
+	font-weight: 900;
+}
+#sidebar .text_box .line .text {
+	width: 170px;
+	margin: 0px auto;
+	padding: 5px 0;
+	font-size: 12px;
+	color: #444;
+	font-weight: 900;
+}
+#sidebar .text_box .text {
+	width: 170px;
+	margin: 0px auto 10px;
+	padding: 10px 0;
+}
+#sidebar .text_box .text li {
+	list-style: none;
+	font-size: 12px;
+}
+#sidebar .text_box .text li a {
+	background-image: url("http://cosplay-fuzoku.net/img/arrow_icon.gif");
+	background-position: 3px 6px;
+	background-repeat: no-repeat;
+	display: block;
+	line-height: 1.4;
+	padding: 2px 5px 1px 10px;
+	white-space: nowrap;
+}
+/* -- リスト -- */
+.localnavi {
+	list-style-type: none;
+	margin-bottom: 2em;
+}
+.localnavi li {
+	display: inline;
+}
+.localnavi a {
+	text-decoration: none;
+	display: block;
+	width: 170px;
+	padding: 0.5em 5px;
+	background-color: #eeeeee;
+	color: #000000;
+	border-bottom: 1px solid #cccccc;
+}
+.localnavi a:hover {
+	text-decoration: none;
+	background-color: #999999;
+	color: #000000;
+	border-bottom: 1px solid #ff0000;
+}
+.bold {
+	font-weight: 900;
+}
+/* ---------------------------------------- #footer内の指定 */
+#footer .line {
+	background-color: #f1f1f1;
+	margin: 40px auto 10px;
+	float: left;
+	width: 100%;
+}
+#footer .line_f {
+	background-color: #f1f1f1;
+	margin: 10px auto 0px;
+	float: left;
+	width: 100%;
+}
+#footer .text {
+	width: 900px;
+	margin: 2px auto;
+	font-size: 12px;
+}
+#footer .text a {
+	margin: 0px 10px 0px 0px;
+}
+#footer .line .text {
+	width: 900px;
+	margin: 2px auto;
+	font-size: 12px;
+	text-align: center;
+}
+#footer .line .text a {
+	margin: 0 40px 0 0;
+}
+/* 以下 CSSデザインサンプルクレジット部分 */
+#cds {
+	display: none;
+}
+/* ===============[ float解除 ]=============== */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+form .clearfix {
+	margin-bottom: 18px;
+	zoom: 1;
+}
+form .clearfix:before, form .clearfix:after {
+	display: table;
+	content: "";
+	zoom: 1;
+}
+form .clearfix:after {
+	clear: both;
+}
+/* End hide from IE-mac */
+/* ===== table系のCSS ======== */
+* table.sheet {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 1px solid #CCC;
+	border-bottom: none;
+	margin-bottom: 10px;
+	width: 100%;
+	background: white;
+	font-size: 12px;
+}
+.sheet input[type="text"] {
+	margin: 2px 5px 2px 5px;
+	border: 1px solid #bbb;
+}
+.sheet input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.sheet select {
+	margin: 0 5px 2px 0px;
+}
+.sheet textarea {
+	width: 98%;
+	margin: 0 auto 0 5px;
+	height: 10em;
+}
+.sheet a {
+	color: blue;
+}
+.sheet a:hover {
+	color: #3eade1;
+}
+.sheet .text {
+	margin: 2px 0 0 0px;
+	color: #444;
+}
+table.sheet {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+table.sheet .title {
+	font-size: 12px;
+}
+.sheet th.darkblue, .sheet td.darkblue {
+	border: 1px solid #165a79;
+}
+.sheet th.adult, .sheet td.adult {
+	border: 1px solid #f0b2d4;
+}
+.sheet th.red, .sheet td.red {
+	border: 1px solid #f19b9b;
+}
+.sheet th.light_orange, .sheet td.light_orange {
+	border: 1px solid #e5dba6;
+}
+.sheet th, .sheet td {
+	border: 1px solid #CCC;
+	padding: 5px 5px 5px;
+	color: #444;
+	text-align: left;
+	background: url("http://cosplay-fuzoku.net/img/sheetline.gif") repeat-x 0 0;
+}
+.sheet .no_border th, .sheet .no_border td {
+	text-align: left;
+	background: none;
+	vertical-align: middle;
+	padding: 2px 10px 0 0;
+}
+.sheet th {
+	background-color: #E6E6E6;
+	font-weight: 600;
+	vertical-align: top;
+	padding: 5px 10px 2px 5px;
+}
+.sheet th.adult {
+	background-color: #ffd6ed;
+	font-weight: bold;
+	vertical-align: top;
+	padding: 10px;
+}
+.sheet th.darkblue, .sheet td.darkblue {
+	border: 1px solid #CCC;
+	padding: 5px;
+	text-align: left;
+	background: url("http://cosplay-fuzoku.net/img/sheetline_blue.gif") repeat-x 0 0;
+}
+.sheet th.darkblue {
+	background-color: #17678c;
+	font-weight: 200;
+	vertical-align: middle;
+	padding: 3px 10px;
+	color: #fff;
+}
+.sheet th.darkgreen {
+	background-color: #165f46;
+	font-weight: 200;
+	vertical-align: middle;
+	padding: 3px 10px;
+	color: #fff;
+}
+.sheet th.red {
+	background-color: #e5bcbc;
+	font-weight: 200;
+	vertical-align: middle;
+	padding: 2px 10px;
+}
+.sheet th.light_orange {
+	background-color: #f5f0d2;
+	font-weight: 200;
+	vertical-align: middle;
+	padding: 2px 10px;
+}
+.sheet th.narrow {
+	font-weight: 200;
+	vertical-align: middle;
+	padding: 0px 10px 0px;
+}
+table.no_border {
+	border: none;
+	font-size: 12px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+table.no_border th {
+	border: none;
+	padding: 2px 0 2px 0;
+	background-color: #fff;
+	vertical-align: bottom;
+}
+table.no_border td {
+	border: none;
+	padding: 2px 0 2px 5px;
+	vertical-align: top;
+}
+table.innertab {
+	width: 650px;
+	margin: 10px auto auto 22px;
+	float: left;
+}
+/* box系 */
+.attention {
+	width: 697px;
+	margin: 10px auto;
+	padding: 5px 0 0px;
+	color: #444;
+	font-weight: 900;
+}
+.attention .text {
+	width: 670px;
+	margin: 0px auto;
+	font-weight: 200;
+	font-size: 14px;
+}
+.attention .text .big {
+	font-size: 16px;
+	color: #E4007F;
+}
+.base {
+	width: 697px;
+	margin: 10px auto;
+	padding: 2px 0;
+	font-size: 12px;
+	color: #444;
+	background-color: #FFECF7;
+	border: solid 1px #FFC6E6;
+	font-weight: 900;
+}
+.base .text {
+	width: 680px;
+	margin: 2px auto;
+	font-size: 14px;
+	font-weight: 200;
+}
+.none {
+	width: 697px;
+	margin: 10px auto;
+	padding: 2px 0;
+	font-size: 12px;
+	color: #444;
+	font-weight: 900;
+}
+.none .text {
+	width: 670px;
+	margin: 10px auto;
+	font-size: 14px;
+	font-weight: 200;
+}
+.next_search {
+	width: 648px;
+	margin: 10px auto 10px 22px;
+	font-size: 16px;
+	float: left;
+	text-align: center;
+	color: #444;
+}
+.label {
+	padding: 1px 3px 2px;
+	font-size: 9.75px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	white-space: nowrap;
+	background-color: #BFBFBF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.label.success {
+	background-color: #46A546;
+}
+pre.prettyprint {
+overflow: hidden;
+}
+.prettyprint {
+background-color: #FEFBF3;
+padding: 9px;
+border: 1px solid rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+pre {
+background-color: whiteSmoke;
+display: block;
+padding: 8.5px;
+margin: 0 0 18px;
+line-height: 18px;
+font-size: 12px;
+border: 1px solid #CCC;
+border: 1px solid rgba(0, 0, 0, 0.15);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+white-space: pre;
+white-space: pre-wrap;
+word-wrap: break-word;
+font-weight:200;
+}
+.wid_90{
+	width:90%
+}
+.wid_95{
+	width:95%
+}
+.wid_98{
+	width:98%
+}
+pre.mgl5{
+	margin-left:5px
+}
+pre.mgl10{
+	margin-left:10px
+}
+.btn.info, .alert-message.info {
+background-color: #339BB9;
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#5bc0de), to(#339bb9));
+background-image: -moz-linear-gradient(top, #5bc0de, #339bb9);
+background-image: -ms-linear-gradient(top, #5bc0de, #339bb9);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5bc0de), color-stop(100%, #339bb9));
+background-image: -webkit-linear-gradient(top, #5bc0de, #339bb9);
+background-image: -o-linear-gradient(top, #5bc0de, #339bb9);
+background-image: linear-gradient(top, #5bc0de, #339bb9);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#339bb9', GradientType=0);
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+border-color: #339BB9 #339BB9 #22697D;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.btn {
+cursor: pointer;
+display: inline-block;
+background-color: #E6E6E6;
+background-repeat: no-repeat;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+padding: 5px 14px 6px;
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+color: #333;
+font-size: 13px;
+line-height: normal;
+border: 1px solid #CCC;
+border-bottom-color: #BBB;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+-webkit-transition: 0.1s linear all;
+-moz-transition: 0.1s linear all;
+-ms-transition: 0.1s linear all;
+-o-transition: 0.1s linear all;
+transition: 0.1s linear all;
+}
+.btn.danger, .alert-message.danger, .btn.error, .alert-message.error {
+background-color: #C43C35;
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#ee5f5b), to(#c43c35));
+background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ee5f5b), color-stop(100%, #c43c35));
+background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
+background-image: linear-gradient(top, #ee5f5b, #c43c35);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#c43c35', GradientType=0);
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+border-color: #C43C35 #C43C35 #882A25;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn.danger, .alert-message.danger, .btn.danger:hover, .alert-message.danger:hover, .btn.error, .alert-message.error, .btn.error:hover, .alert-message.error:hover, .btn.success, .alert-message.success, .btn.success:hover, .alert-message.success:hover, .btn.info, .alert-message.info, .btn.info:hover, .alert-message.info:hover {
+color: white;
+}
+.mgt10{
+	margin-top:10px;
+}
+.mgt20{
+	margin-top:20px;
+}
+.mgt40{
+	margin-top:40px;
+}
+.mgt60{
+	margin-top:60px;
+}
+
+.error-message{
+	border:solid 2px #ff4b4b;
+	padding:3px;
+	width:95%;
+	margin:5px auto;
+	color:#ff4b4b;
+	font-weight:600;
+}

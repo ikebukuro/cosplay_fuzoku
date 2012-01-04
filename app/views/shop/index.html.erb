@@ -1,0 +1,30 @@
+<div id="shop_main_area">
+	<table class="sheet">
+		<tbody>
+			<tr>
+				<th> 店舗名 </th>
+				<td><%= @shop.name %></td>
+			</tr>
+			<tr>
+				<th> お店サイトURL </th>
+				<td><a href="
+				<%= @shop.shop_url %>
+				" target="_blank"> <%= @shop.shop_url %> </a></td>
+			</tr>
+			<tr>
+				<th> 最低予算 </th>
+				<td> ¥ <%= @shop.price %>〜</td>
+			</tr>
+			<tr>
+				<th> 電話番号 </th>
+				<td><%= @shop.tel %>
+				<br>
+				<span style="color:#e4007f;font-weight:900;background-color:#fdffe0"> お電話の際は「コスプレ風俗NETを見た」とお伝えください」 </span></td>
+			</tr>
+			<tr>
+				<th>住所</th>
+				<td><%= @shop.address %></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

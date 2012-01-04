@@ -1,0 +1,72 @@
+<div id="container">
+	<div id="contents">
+		<!-- パン屑リスト -->
+		<p class="topic-path">
+			<a href="/">HOME</a>&nbsp;＞&nbsp; 			お問い合わせ
+		</p>
+		<div class="main_title">
+			<h2 class="text"> お問い合わせ </h2>
+		</div>
+		<div class="none">
+			<p class="text">
+				お問い合わせは以下のメールフォームからお送りください
+				<br/>
+				お問い合わせ後１日以内にご回答できるように心がけております。
+				<br/>
+				万が一、お問い合わせ後２日以内に返事が来ない場合は、システム上メッセージが送れていない可能性がありますので、お手数ですが再度メールフォームから、
+				メールの送信をお願い致します。
+			</p>
+		</div>
+		<% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2 style="color: red;" class="error">入力内容に誤りが有ります</h2>
+      <ul>
+      <% @contact.errors.full_messages.each do |msg| %>
+        <li style="color: red;"><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 		<%= form_for @contact,:url => { :action => "confirm" } do |f| %>
+			<table class="sheet">
+				<tr>
+					<th><%= f.label :name,"お名前" %></th>
+					<td>
+					<div class="input text">
+						<%= f.text_field :name %>
+					</div></td>
+				</tr>
+				<tr>
+					<th><%= f.label :email,"メールアドレス（※必須）" %></th>
+					<td>
+					<div class="input text">
+						<%= f.text_field :email %>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<th><%= f.label :contact_type,"お問い合わせ種別" %></th>
+					<td>
+						 <%= f.select :contact_type,Contact::CONTACT_TYPES %>
+					</td>
+				</tr>
+				<tr>
+					<th><%= f.label :plans,"掲載プラン" %></th>
+					<td>
+						<%= f.select :plans,Contact::PUB_PLANS %>
+					</td>
+				</tr>
+				<tr>
+					<th><%= f.label "お問い合わせ内容（※必須）" %></th>
+					<td><%= f.text_area :content %></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="submit">
+					<div class="submit">
+						<%= submit_tag '内容確認画面へ', :class => "mini" %>
+					</div></td>
+				</tr>
+			</table>
+		<% end %>
+	</div>
+</div>

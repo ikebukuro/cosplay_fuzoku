@@ -1,0 +1,111 @@
+<!-- サイドバー ここから -->
+<div class="sidetitle">
+	<h6 class="text"> 全国のお店 </h6>
+</div>
+<div class="text_box">
+	<div class="text">
+		<a href="/pr/">
+		<img src="http://cosplay-fuzoku.net/img/side_pr_image.gif" alt="コスプレ風俗NET | サイドバナー" width="172px" height="32px" /></a>
+	</div>
+</div>
+<div class="sidetitle">
+	<h6 class="text"> 全国のお店を探す </h6>
+</div>
+<div class="text_box">
+	<div class="line">
+		<p class="text">
+			エリアを絞り込む
+		</p>
+	</div>
+	<div class="text">
+		<ul class="clearfix">
+			<% @mast_prefectures.each do |mast_prefecture| %>
+			<li>
+				<a href="/search/<%= mast_prefecture.prefecture_mappings.param %>/"><%= mast_prefecture.name %></a>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+	<div class="line">
+		<p class="text">
+			プレイ内容で絞り込む
+		</p>
+	</div>
+	<div class="text">
+		<ul>
+			<% @mast_play_categories.each do |mast_play_category| %>
+			<li>
+				<a href="/search/?play=<%= mast_play_category.id %>"><%= mast_play_category.name %></a>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+	<div class="line">
+		<p class="text">
+			最低予算で絞り込む
+		</p>
+	</div>
+	<div class="text">
+		<ul>
+			<li>
+				<a href="/search/?budget=2000">¥2,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=5000">¥5,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=8000">¥8,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=10000">¥10,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=13000">¥13,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=15000">¥15,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=18000">¥18,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=20000">¥20,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=23000">¥23,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=25000">¥25,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=28000">¥28,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=30000">¥30,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=33000">¥33,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=35000">¥35,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=38000">¥38,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=40000">¥40,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=50000">¥50,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=80000">¥80,000～</a>
+			</li>
+			<li>
+				<a href="/search/?budget=100000">¥100,000～</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<a href="/pr/"> <img src="http://cosplay-fuzoku.net/img/keisai_banner.gif" alt="コスプレ風俗NET | 掲載のお問い合わせ" width="191px" height="81px" /></a>
+<!-- サイドバー ここまで -->

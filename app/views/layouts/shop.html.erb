@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>コスプレ風俗NET北海道版 - ソープランド 花火 詳細|北海道のコスプレ風俗のお店探しなら</title>
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="Description" content="ソープランド 花火 のお店情報です。北海道のコスプレ風俗のお店探しなら、コスプレ風俗NET。北海道のコスプレプレイが出来る風俗店舗を集めました。" />
+		<meta name="Keywords" content="コスプレ　風俗　北海道,ソープランド 花火 ,コスプレ,風俗,北海道" />
+		<%= stylesheet_link_tag 'base' ,:media=>'screen' %>
+		<%= stylesheet_link_tag 'shop' ,:media=>'screen' %>
+		<%= javascript_include_tag "jquery-1.4.2.min" %>
+		<%= render 'common/google_analytics' %>
+	</head>
+	<body>
+		<%= render 'common/header' %>
+		<div id="wrapper">
+			<div id="container">
+				<div id="contents">
+					<!-- Page Path start -->
+					<p class="topic-path">
+						<a href="/">HOME</a>&nbsp;＞&nbsp;<%= @shop.name %>
+					</p>
+					<!-- Page Path end -->
+					<!-- Search Area start -->
+					<div class="main_title">
+						<h2 class="text"> <%= @shop.name %> </h2>
+					</div>
+					<!-- 検索結果エリア start -->
+					<div id="shop_main_area">
+						<%= yield %>
+					</div>
+					<!-- 検索結果エリア end -->
+					<%= render 'common/search_cond' %>
+				</div>
+			</div>
+			<div id="sidebar">
+				<%= render 'common/sidebar_main' %>
+			</div>
+		</div>
+		<%= render 'common/footer' %>
+	</body>
+</html>

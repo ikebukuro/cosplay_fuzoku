@@ -1,0 +1,46 @@
+<div id="container">
+	<div id="contents">
+		<!-- パン屑リスト -->
+		<p class="topic-path">
+			<a href="/">HOME</a>&nbsp;＞&nbsp; 			お問い合わせ確認
+		</p>
+		<div class="main_title">
+			<h2 class="text"> お問い合わせ内容確認 </h2>
+		</div>
+		<div class="none">
+			<p class="text">
+				以下の内容で送信します。よろしいでしょうか？
+			</p>
+		</div>
+		<%= form_for @contact,:url => { :action => "finish" } do |f| %>
+		<table class="sheet">
+			<tr>
+				<th><%= f.label :name,"お名前" %></th>
+				<td><%= f.hidden_field :name,:value => @contact.send("name") %><%= @contact.send("name") %></td>
+			</tr>
+			<tr>
+				<th><%= f.label :email,"メールアドレス（※必須）" %></th>
+				<td><%= f.hidden_field :email,:value => @contact.send("email") %><%= @contact.send("email") %></td>
+			</tr>
+			<tr>
+				<th><%= f.label :contact_type,"お問い合わせ種別" %></th>
+				<td><%= f.hidden_field :contact_type,:value => @contact.send("contact_type") %><%= @contact.send("contact_type") %></td>
+			</tr>
+			<tr>
+				<th><%= f.label :plans,"掲載プラン" %></th>
+				<td><%= f.hidden_field :plans,:value => @contact.send("plans") %><%= @contact.send("plans") %></td>
+			</tr>
+			<tr>
+				<th><%= f.label "お問い合わせ内容（※必須）" %></th>
+				<td><%= f.hidden_field :content,:value => @contact.send("content") %><%= @contact.send("content") %></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="submit">
+				<input class="minimini" onClick="history.back();return false;" type="button" value="戻る" />
+				<%= submit_tag '送信する', :class => "minimini" %>
+				</td>
+			</tr>
+		</table>
+		<% end %>
+	</div>
+</div>

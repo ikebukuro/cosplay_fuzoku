@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>風俗店舗様の広告募集中です - コスプレ風俗NET</title>
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="Description" content="風俗店舗様の広告を随時募集しております。コスプレ風俗NETはコスプレ風俗店舗様に特化したポータルサイトです。" />
+		<meta name="Keywords" content="風俗　広告,コスプレ,風俗,広告" />
+		<%= stylesheet_link_tag 'pr' ,:media=>'screen' %>
+		<%= stylesheet_link_tag 'base' ,:media=>'screen' %>
+		<%= javascript_include_tag "jquery-1.4.2.min" %>
+		<%= csrf_meta_tag %>
+		<%= render 'common/google_analytics' %>
+	</head>
+	<body>
+		<%= render 'common/header' %>
+		<div id="wrapper">
+			<section>
+				<%= yield %>
+			</section>
+			<div id="sidebar">
+				<%= render 'common/sidebar_menu' %>
+				<%= render 'common/sidebar_ad_plan_list' %>
+			</div>
+		</div>
+		<%= render 'common/footer' %>
+	</body>
+</html>

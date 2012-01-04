@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= @logo_message %>コスプレ風俗NET - TOPページ|<%= @logo_message %>のコスプレ風俗のお店探しなら</title>
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="Description" content="<%= @logo_message %>のコスプレ風俗のお店探しなら、コスプレ風俗NET。全国のコスプレプレイが出来る風俗店舗を集めました。コスプレ風俗NET" />
+		<meta name="Keywords" content="コスプレ　風俗　<%= @logo_message %>,コスプレ,風俗,<%= @logo_message %>" />
+		<%= stylesheet_link_tag 'base' ,:media=>'screen' %>
+		<%= stylesheet_link_tag 'search' ,:media=>'screen' %>
+		<%= javascript_include_tag "jquery-1.4.2.min" %>
+		<%= render 'common/google_analytics' %>
+	</head>
+	<body>
+		<%= render 'common/header' %>
+		<div id="wrapper">
+			<div id="container">
+				<div id="contents">
+
+					<!-- Page Path start -->
+					<p class="topic-path">
+						<%= link_to 'HOME',:controller => 'home',:action => 'index' %><%= @breadcrumbs_list %>
+					</p>
+					<!-- Page Path end -->
+					
+					<!-- Search Area start -->
+					<%= render 'common/main_title' %>
+					<%= render 'common/main_search_box' %>
+					<!-- Search Area end --> 
+					
+					<!-- Shop List start -->
+					<div class="osusume_title">
+						<h3 class="text"> 一押し風俗店舗一覧 </h3>
+					</div>
+					<%= render 'common/osusume_contents' %>
+					<!-- Shop List end -->
+					
+					<!-- Pick Up start -->
+					<div class="pickup_title">
+						<h5 class="text"> Pick Up 風俗嬢 </h5>
+					</div>
+					<%= render 'common/pickup_contents' %>
+					<!-- Pick Up end -->
+					
+					<!-- 検索結果エリア start -->
+					<div id="search_result_area">
+					<%= render 'common/shop_search_ad' %>
+						<%= yield %>
+					</div>
+					<!-- 検索結果エリア end -->
+					<%= render 'common/search_cond' %>
+				</div>
+			</div>
+			<div id="sidebar">
+				<%= render 'common/sidebar_main' %>
+			</div>
+		</div>
+		<%= render 'common/footer' %>
+	</body>
+</html>

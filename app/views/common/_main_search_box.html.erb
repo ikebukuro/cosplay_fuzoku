@@ -1,0 +1,63 @@
+<div class="main_search_box">
+	<div class="icon_layer">
+		<div class="icon">
+			<img src="http://cosplay-fuzoku.net/img/pref_icon.gif" alt="コスプレ風俗ネット | 都道府県絞り込み" width="104px" height="25px" />
+		</div>
+		<div class="icon">
+			<img src="http://cosplay-fuzoku.net/img/play_icon.gif" alt="コスプレ風俗ネット | プレイ内容絞り込み" width="104px" height="25px" />
+		</div>
+		<div class="icon">
+			<img src="http://cosplay-fuzoku.net/img/pay_icon.gif" alt="コスプレ風俗ネット | 予算絞り込み" width="104px" height="25px" />
+		</div>
+	</div>
+	<div class="input_layer">
+		<form method="post" action="/search">
+			<input type="hidden" id="ken" name="ken" value="<%= params[:mast_prefectures] %>">
+			<div class="input">
+				<select name="mast_prefectures" id="mast_prefectures">
+					<option value="">----指定なし----</option>
+					<% @mast_prefectures.each do |mast_prefecture| %>
+					<option value="<%= mast_prefecture.id %>"><%= mast_prefecture.name %></option>
+					<% end %>
+				</select>
+				<span class="bold">&nbsp;&nbsp;&nbsp;×</span>
+			</div>
+			<div class="input">
+				<select name="mast_plays" id="mast_plays">
+					<option value="">----指定なし----</option>
+					<% @mast_play_categories.each do |mast_play_category| %> 
+					<option value="<%= mast_play_category.id %>"><%= mast_play_category.name %></option>
+					<% end %>
+				</select>
+				<span class="bold">&nbsp;&nbsp;&nbsp;×</span>
+			</div>
+			<div class="input_f">
+				<select name="mast_budgets" id="mast_budgets">
+					<option value="">----指定なし----</option>
+					<option value="2000">￥2,000～</option>
+					<option value="5000">￥5,000～</option>
+					<option value="8000">￥8,000～</option>
+					<option value="10000">￥10,000～</option>
+					<option value="13000">￥13,000～</option>
+					<option value="15000">￥15,000～</option>
+					<option value="18000">￥18,000～</option>
+					<option value="20000">￥20,000～</option>
+					<option value="23000">￥23,000～</option>
+					<option value="25000">￥25,000～</option>
+					<option value="28000">￥28,000～</option>
+					<option value="30000">￥30,000～</option>
+					<option value="33000">￥33,000～</option>
+					<option value="35000">￥35,000～</option>
+					<option value="38000">￥38,000～</option>
+					<option value="40000">￥40,000～</option>
+					<option value="50000">￥50,000～</option>
+					<option value="80000">￥80,000～</option>
+					<option value="100000">￥100,000～</option>
+				</select>
+			</div>
+			<div class="submit">
+				<input type="submit" class="main_search_box_submit" value="">
+			</div>
+		</form>
+	</div>
+</div>

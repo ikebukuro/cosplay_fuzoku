@@ -1,0 +1,19 @@
+<table class="sheet innertab">
+	<tr>
+		<th style="width:150px">店名</th>
+		<th style="width:50px">地域</th>
+		<th style="width:70px">最低予算</th>
+		<th>住所</th>
+	</tr>
+	<% @shop_infos.each do |shop_info| %>
+	<tr>
+		<td><h6 class="title"><a href="/shop/<%= shop_info.id %>"><%= shop_info.name %> </a></h6></td>
+		<td><%= shop_info.area_name %></td>
+		<td>¥<%= shop_info.price %>～</td>
+		<td><%= shop_info.address %> </td>
+	</tr>
+	<% end %>
+</table>
+<div class="paging">
+	<%= will_paginate @shop_infos %>
+</div>
